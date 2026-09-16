@@ -39,7 +39,7 @@ function App() {
     }
     setLoading(true);
     setError(null);
-    fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${debouncedQuery}`)
+    fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${debouncedQuery}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Request failed with status ${response.status}`);
